@@ -9,4 +9,6 @@ function saludar(nombre="Mundo") {
     alert ("Hola " + nombre);
 }
 
+saludar();
 saludar("°-°");
+saludar(nombre);
