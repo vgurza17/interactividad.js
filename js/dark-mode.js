@@ -1,4 +1,11 @@
 const themeToggleBtn = document.getElementById("theme-toggle-btn");
 toggleThemeBtn.addEventListener ("click", function() {
-alert("me diste click");   
+document.body.classList.toggle("dark"); 
 });
+
+/*
+setTimeout(() =>) 
+    alert("me diste click");   
+    toggleThemeBtn.classList.add("ejemplo")
+*/
+
