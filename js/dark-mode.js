@@ -1,5 +1,5 @@
 const themeToggleBtn = document.getElementById("theme-toggle-btn");
-toggleThemeBtn.addEventListener ("click", function() {
+themeToggleBtn.addEventListener ("click", function() {
 document.body.classList.toggle("dark"); 
 });
 
