@@ -5,9 +5,9 @@ const bgPicker = document.getElementById("bg-picker");
 toggleThemeBtn.addEventListener("click", function () {
 document.body.classList.toggle("dark"); 
 if (document.body.classList.contains("dark")){
-    toggleThemeBtn.innerText = "Light Mode" ;
+    toggleThemeBtn.innerHTML = "<i class='fa-solid fa-face-smile'></i>" ;
 } else {
-toggleThemeBtn.innerText = "Dark Mode" ;
+toggleThemeBtn.innerHTML = "<i class='fa-regular fa-face-smile'></i>" ;
 }
 });
 
