@@ -1,16 +1,22 @@
-const themeToggleBtn = document.getElementById("theme-toggle-btn");
+const toggleThemeBtn = document.getElementById("toggle-theme-btn");
 const colorPicker = document.getElementById ("color-picker");
 const bgPicker = document.getElementById("bg-picker");
 
-themeToggleBtn.addEventListener ("click", function() {
+toggleThemeBtn.addEventListener("click", function () {
 document.body.classList.toggle("dark"); 
+if (document.body.classList.contains("dark")){
+    toggleThemeBtn.innerText = "Light Mode" ;
+} else {
+toggleThemeBtn.innerText = "Dark Mode" ;
+}
 });
+
 colorPicker.addEventListener ("change",function(){
     document.body.style.color= colorPicker.value;
-})
+});
 bgPicker.addEventListener ("change",function(){
     document.body.style.backgroundColor= bgPicker.value;
-})
+});
 /*
 setTimeout(() =>) 
     alert("me diste click");   
